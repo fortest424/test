@@ -2,7 +2,7 @@
  ===
  ## 型態
 > ### **int：整數型態**
->```c++=
+>```c++
 >int num;              //單純宣告變數num
 >int num1=25;         //宣告num1為25
 >```
@@ -11,7 +11,7 @@
 > 
 >   ### **char**
 > char：只是一個字元而已
->```c++=
+>```c++
 >char a;             //單純宣告變數a
 >char b='b';         //宣告b為'b'
 >//記得是單引號''喔喔喔
@@ -20,22 +20,23 @@
 > 
 > ### **float**
 > float：浮點數型態(有小數點)
->```c++=
->float F;             //單純宣告變數F`
+>```c++
+>float F;             //單純宣告變數F
 >float FF=3.14159;     //宣告FF為3.14159
 >``` 
 >可至小數點後7位
+>
 > ### **string**
 > string："字串"型態 (一個char陣列的概念)
->```c++=
->string str;             //單純宣告變數str`
->string str1="wlsh";         //宣告str1為wlsh`
+>```c++
+>string str;             //單純宣告變數str
+>string str1="wlsh";         //宣告str1為wlsh
 >```
 >記得是雙引號""喔喔喔喔
 > 
 > ### **bool**
 > bool:布林值(用來表達對或錯)
-> ```c++=
+> ```c++
 > bool identify=true;     //其實true就是1
 > bool identify=false;    //而false就是0
 > ```
@@ -61,17 +62,17 @@
 > ### **cin**
 >**語法:cin>>變數名稱;**
 >`cin>>num;`
->:::danger 
->cin時:遇到空白鍵或換行符號就會停止喔喔喔!!
->:::
+>
+>**cin時:遇到空白鍵或換行符號就會停止喔喔喔!!**
+>
 > ### **cout**
 >**語法:cout<<變數名稱;**
->```c++=
+>```c++
 >cout<<7122;//單純輸出7122
 >cout<<num;//輸出num裡面的data
 >```
 >### **我想要換行:**
->```c++=
+>```c++
 >cout<<"\n";//BTW"\n"的執行速度會比endl還快ㄛ
 >cout<<"endl";
 >```
@@ -80,7 +81,7 @@
  **整行讀取?**
  **如果別人輸入:"1 2 3 4 5",但我想讀取整行 ?**
   *  getline
-```c++=
+```c++
 /*Example*/
 string str1;
 string str2;
@@ -93,27 +94,27 @@ cout<<str2<<"\n";    //output:1
 ## 四則運算&字元處理
 > ### **四則運算**
 > * 加法:+
-> ```c++=
+> ```c++
 > int a=8,b=9;
 > cout<<a+b;//17
 > ```
 > * 減法:-
-> ```c++=
+> ```c++
 > int a=8,b=9;
 > cout<<a-b;//-1
 > ```
 > * 乘法:*
-> ```c++=
+> ```c++
 > int a=8,b=9;
 > cout<<a*b;//72
 > ```
 > * 除法:/
-> ```c++=
+> ```c++
 > int a=8,b=9;
 > cout<<a/b;//0
 > ```
 > * 取餘數:%
-> ```c++=
+> ```c++
 > int a=3,b=2;
 > cout<<a%b;//1
 > ```
@@ -125,7 +126,7 @@ cout<<str2<<"\n";    //output:1
 >
 > ### **字元處理**
 >如果:
->```c++=
+>```c++
 >char a='8',b='9';
 >cout<<a+b;
 >```
@@ -135,15 +136,15 @@ cout<<str2<<"\n";    //output:1
 > 簡而言之:每個字元都有一個號碼代表(例如A的ASCII為65)
 > * 語法:(int)'字元'得到該字元的ASCII碼
 >For example:
-> ```c++=
+> ```c++
 > cout<<(int)'a';//61
 > ```
 > 那剛剛這題...?
-> ```c++=
+> ```c++
 > cout<<((int)'8'-(int)'9');//就可以啦!!
 > ```
 > 如果單純要值...?
-> ```c++=
+> ```c++
 > cout<<((int)'8'-(int)'0');//8
 > ```
 
@@ -154,7 +155,7 @@ cout<<str2<<"\n";    //output:1
 要先`#include<sstream>`
 跟`cin`和`cout`一樣:都具備`>>`,`<<`串流運算子
 **基本操作:** 詳細參照[C++reference](http://www.cplusplus.com/reference/sstream/stringstream/?kw=stringstream)
-```c++=
+```c++
 stringstream ss;      
 string Str="59487";
 int num;
@@ -166,7 +167,7 @@ cout<<num+1;   //59488
  #### **額外補充的額外補充!**
 * stringstream還可以處理:"1 2 3 4 5"這種含空格的字串
 * 常搭配getline使用
-```c++=
+```c++
 string Str,temp;
 stringstream ss;
 getline(cin,Str);     //假設輸入"1 2 3 4 5"
@@ -185,7 +186,7 @@ cout<<temp;           //2
 >  **關係運算子**
 > * 1. `==` (有兩個"="喔!)
 > meaning:equal
->  ```c++=
+>  ```c++
 >  int a=1;               //assign a=1
 >  if(a==1) cout<<"a=1";  //如果a等於1,輸出"a=1"
 >  ```
@@ -201,7 +202,7 @@ cout<<temp;           //2
 >  ### **邏輯運算子**
 > * 1. ! (這是驚嘆號) 
 > meaning:not
-> ```c++=
+> ```c++
 > string school;
 > cin>>school;       //cin:CKHS
 > if(school!="wlsh"){
@@ -212,7 +213,7 @@ cout<<temp;           //2
 > meaning:or
 > 取聯集
 > 或
-> ```c++=
+> ```c++
 > /*example*/
 > int math,mandarin;
 > if(math>90||mandarin>90){ //判斷式
@@ -223,7 +224,7 @@ cout<<temp;           //2
 > meaning:and
 > 取交集
 > 且
-> ```c++=
+> ```c++
 > bool girlfriend=true;
 > string you=programmer;
 > if(girlfriend==true&&you=="programmer"){
@@ -236,7 +237,7 @@ cout<<temp;           //2
 >  ### **in C++...**
 >   **那else呢??**
 >  else:做不符合判斷式的事
->  ```c++=
+>  ```c++
 >  int score=59;
 >  if(score>=60){
 >    cout<<"You pass!!";
@@ -249,7 +250,7 @@ cout<<temp;           //2
 >   #### **巢狀if-else**
 >  在else中在放入if   (什麼意思??)
 >  看Code一目了然
->  ```c++=
+>  ```c++
 >  int score=41;
 >  if(score>=60){
 >      cout<<"All pass!";
@@ -267,7 +268,7 @@ cout<<temp;           //2
 >  #### else if()
 >  Why:就比較方便
 >  像剛剛的可以表示成...
->  ```c++=
+>  ```c++
 >  int score=41;
 >  if(score>=60){
 >      cout<<"All pass";
