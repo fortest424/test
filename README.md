@@ -14,4 +14,4 @@ wlcsc stands for wlsh computer science club
 
 ### **Link on Hackmd:**
 
-
+[c++handout-1](https://hackmd.io/@IkXAfJT9QRig3ZPcZw6GaA/o_____o)
