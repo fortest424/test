@@ -3,11 +3,9 @@
 
 wlcsc stands for wlsh computer science club  
 
-如你所見  
+社課的C++講義:  
 
-所以在Hackmd看我講義吧!
-
-在Github的Mardown沒有像在Hackmd那麼好看  
+也可以在Hackmd看我講義!
 
 ### **Link on Github:**
 [c++handout-1](https://github.com/jason810496/wlcsc/blob/c%2B%2B/C%2B%2B1.0.md)
